@@ -29,8 +29,7 @@ class RemoveSpacesCommand(RemoveBaseCommand):
 
     replacements = [
         {'rx':re.compile('  +', re.MULTILINE),'repl':' '},
-        {'rx':re.compile('^ +', re.MULTILINE),'repl':''},
-        {'rx':re.compile(' +$', re.MULTILINE),'repl':''},
+        {'rx':re.compile('(^ +| +$)', re.MULTILINE),'repl':''},
     ]
 
 
