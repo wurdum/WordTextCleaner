@@ -1,0 +1,12 @@
+[
+    {
+        "id": "removespaces",
+        "caption": "DocRemoveSpaces: Removes extra spaces from text",
+        "command": "remove_spaces"
+    },
+    {
+        "id": "removelistmarkers",
+        "caption": "DocRemoveListMarkers: Removes list markers",
+        "command": "remove_list_markers"
+    }
+]
