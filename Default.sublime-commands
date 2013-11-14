@@ -8,5 +8,15 @@
         "id": "removelistmarkers",
         "caption": "DocRemoveListMarkers: Removes list markers",
         "command": "remove_list_markers"
+    },
+    {
+        "id": "removecommentsinbrackets",
+        "caption": "DocRemoveCommentsInBrackets: Removes comments in brackets",
+        "command": "remove_comments_in_brackets"
+    },
+    {
+        "id": "removeinstructionendings",
+        "caption": "DocRemoveInstructionEndings: Removes instruction endings",
+        "command": "remove_instruction_endings"
     }
 ]

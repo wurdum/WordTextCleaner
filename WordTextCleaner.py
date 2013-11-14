@@ -38,3 +38,17 @@ class RemoveListMarkersCommand(RemoveBaseCommand):
     replacements = [
         {'rx':re.compile('^(\d{1,3}|\w{1,3})(\.|\))?\s+', re.MULTILINE),'repl':''}
     ]
+
+
+class RemoveCommentsInBracketsCommand(RemoveBaseCommand):
+
+    replacements = [
+        {'rx': re.compile('( +)?\[.*\]( +)?$', re.MULTILINE), 'repl': ''}
+    ]
+
+
+class RemoveInstructionEndingsCommand(RemoveBaseCommand):
+
+    replacements = [
+        {'rx': re.compile('( +)?\(specify\)([ \_]+)?', re.MULTILINE | re.IGNORECASE), 'repl': ''}
+    ]
